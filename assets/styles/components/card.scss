@@ -2,7 +2,7 @@
 
 .card {
   @include montserrat;
-  max-width: 346px;
+  max-width: 21.625rem;
   background-color: var(--white);
   border-radius: 0.625rem;
   user-select: none;
@@ -14,36 +14,36 @@
   }
 
   &__content {
-    padding: 24px;
+    padding: 1.5rem;
     user-select: text;
   }
 
   &__category {
     text-transform: uppercase;
     color: var(--dark-grayish-blue);
-    letter-spacing: 5px;
-    font-size: 12px;
-    padding: 0 0 12px 0;
+    letter-spacing: 0.313rem;
+    font-size: 0.75rem;
+    padding: 0 0 0.75 0;
   }
 
   &__title {
     @include fraunces;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 700;
-    line-height: 32px;
+    line-height: 2rem;
     margin-bottom: 1rem;
   }
 
   &__description {
     color: var(--dark-grayish-blue);
-    font-size: 14.1px;
-    line-height: 23px;
+    font-size: 0.881rem;
+    line-height: 1.438rem;
   }
 
   &__prices {
     display: flex;
     align-items: center;
-    margin: 24px 0 20px 0;
+    margin: 1.5rem 0 1.25rem 0;
   }
 
   &__price--new {
@@ -51,7 +51,7 @@
     font-weight: 700;
     color: var(--dark-cyan);
     font-size: 2rem;
-    margin-right: 19px;
+    margin-right: 1.188rem;
   }
 
   &__price--old {
@@ -64,11 +64,11 @@
     align-items: center;
     justify-content: center;
     background-color: var(--dark-cyan);
-    border-radius: 8px;
+    border-radius: 0.5rem;
     font-weight: 700;
     color: var(--white);
     width: 100%;
-    padding: 15px 92px 15px 92px;
+    padding: 0.938rem 5.75rem 0.938rem 5.75rem;
   }
   &__button:hover {
     background-color: var(--deep-aquamarine-hover);
@@ -76,6 +76,6 @@
   }
 
   &__icon {
-    margin-right: 11px;
+    margin-right: 0.688rem;
   }
 }

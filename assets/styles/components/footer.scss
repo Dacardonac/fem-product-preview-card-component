@@ -3,12 +3,13 @@
 .footer {
   @include montserrat;
   font-weight: 700;
-  margin: 25px;
+  margin: 1.563rem;
 
   &__attribution {
-    font-size: 11px; text-align: center;
+    font-size: 0.688rem;
+    text-align: center;
   }
   &__link {
-    color: hsl(228, 45%, 44%);
+    color: var(--links);
   }
 }
