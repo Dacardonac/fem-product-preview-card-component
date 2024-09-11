@@ -1,0 +1,11 @@
+@use '../utils/mixins' as *;
+
+.card {
+  @include montserrat;
+  background-color: var(--white);
+  border-radius: 0.625rem;
+
+  &__image {
+    border-radius: 0.625rem 0.625rem 0 0;
+  }
+}
