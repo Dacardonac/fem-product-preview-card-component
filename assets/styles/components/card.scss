@@ -2,10 +2,78 @@
 
 .card {
   @include montserrat;
+  max-width: 346px;
   background-color: var(--white);
   border-radius: 0.625rem;
+  user-select: none;
 
   &__image {
+    max-width: 100%;
+    height: auto;
     border-radius: 0.625rem 0.625rem 0 0;
+  }
+
+  &__content {
+    padding: 24px;
+    user-select: text;
+  }
+
+  &__category {
+    text-transform: uppercase;
+    color: var(--dark-grayish-blue);
+    letter-spacing: 5px;
+    font-size: 12px;
+    padding: 0 0 12px 0;
+  }
+
+  &__title {
+    @include fraunces;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    color: var(--dark-grayish-blue);
+    font-size: 14px;
+    line-height: 23px;
+    margin-bottom: 24px;
+  }
+
+  &__prices {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px
+  }
+
+  &__price--new {
+    @include fraunces;
+    font-weight: 700;
+    color: var(--dark-cyan);
+    font-size: 2rem;
+    margin-right: 19px;
+  }
+
+  &__price--old {
+    color: var(--dark-grayish-blue);
+    text-decoration: line-through;
+  }
+
+  &__button {
+    background-color: var(--dark-cyan);
+    border-radius: 8px;
+    font-weight: 700;
+    color: var(--white);
+    width: 100%;
+    padding: 15px 92px 15px 92px;
+  }
+  &__button:hover {
+    background-color: var(--deep-aquamarine-hover);
+    cursor: pointer;
+  }
+
+  &__icon {
+    margin-right: 11px;
   }
 }
