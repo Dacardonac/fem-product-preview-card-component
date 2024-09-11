@@ -3,7 +3,7 @@
 .footer {
   @include montserrat;
   font-weight: 700;
-  margin-bottom: 25px;
+  margin: 25px;
 
   &__attribution {
     font-size: 11px; text-align: center;

@@ -36,15 +36,14 @@
 
   &__description {
     color: var(--dark-grayish-blue);
-    font-size: 14px;
+    font-size: 14.1px;
     line-height: 23px;
-    margin-bottom: 24px;
   }
 
   &__prices {
     display: flex;
     align-items: center;
-    margin-bottom: 20px
+    margin: 24px 0 20px 0;
   }
 
   &__price--new {
@@ -61,6 +60,9 @@
   }
 
   &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--dark-cyan);
     border-radius: 8px;
     font-weight: 700;
