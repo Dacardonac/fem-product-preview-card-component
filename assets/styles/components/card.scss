@@ -11,6 +11,7 @@
     max-width: 100%;
     height: auto;
     border-radius: 0.625rem 0.625rem 0 0;
+    cursor: pointer;
   }
 
   &__content {
@@ -23,7 +24,6 @@
     color: var(--dark-grayish-blue);
     letter-spacing: 0.313rem;
     font-size: 0.75rem;
-    padding: 0 0 0.75 0;
   }
 
   &__title {
@@ -80,31 +80,35 @@
   }
 }
 
-
-
-@media (min-width: 1440px) {
+@media (min-width: 48rem) {
   .card {
-    max-width: 600px;
+    max-width: 25rem;
+  }
+}
+
+@media (min-width: 90rem) {
+  .card {
+    max-width: 37.5rem;
     display: flex;
 
     &__image {
-      max-width: 300px;
+      max-width: 18.75rem;
       height: 100%; /* Se ajusta al 100% de la altura del contenedor padre */
       border-radius: 0.625rem 0 0 0.625rem;
       object-fit: cover; /* Mantiene la proporción de la imagen sin distorsionarse */
     }
 
     &__content {
-      padding: 32px 32px 0 32px;
+      padding: 2rem 2rem 0 2rem;
     }
 
     &__title {
-      margin: 20px 0 24px 0;
+      margin: 1.25rem 0 1.5rem 0;
     }
 
     &__button {
-      margin-top: 30px;
-      padding: 15px 62px;
+      margin-top: 1.875rem;
+      padding: 0.938rem 3.875rem;
     }
   }
 }
