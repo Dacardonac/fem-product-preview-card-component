@@ -94,9 +94,9 @@
 
     &__image {
       max-width: 18.75rem;
-      height: 100%; /* Se ajusta al 100% de la altura del contenedor padre */
+      height: 100%;
       border-radius: 0.625rem 0 0 0.625rem;
-      object-fit: cover; /* Mantiene la proporción de la imagen sin distorsionarse */
+      object-fit: cover;
     }
 
     &__content {
