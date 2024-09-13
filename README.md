@@ -22,22 +22,14 @@ This is a solution to the **[Product preview card component challenge on Fronten
 
 ### The challenge
 
-Users should be able to:
+**Users should be able to in this project:**
 
-- View the optimal layout depending on their device's screen size
+- View the optimal layout depending on their device's screen size (Responsive)
 - See hover and focus states for interactive elements
 
 ### Screenshot
 
 ![Solution Screenshot](./public/design/Screenshot.webp)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
 
@@ -51,35 +43,73 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Semantic HTML5 Markup
 - CSS3 Custom Properties
 - Flexbox
-- CSS Grid
 - Mobile-first Workflow
 - [Vite](https://vitejs.dev/) - Frontend Tooling
 - [Sass/Scss](https://sass-lang.com/) - Modules
 
-
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I learned a lot about responsive design and its breakpoints, and I practiced the BEM methodology and modularized styles in components using Sass.
 
-To see how you can add code snippets, see below:
+You can see part of the class names with BEM and breakpoints in SCSS below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+
+  <!--Classes with BEM-->
+
+    <article class="card__content">
+        <p class="card__category">Perfume</p>
+        <h1 class="card__title">Gabrielle Essence Eau De Parfum</h1>
+        <p class="card__description">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+
+        <p class="card__prices">
+          <span class="card__price--new">$149.99</span>
+          <span class="card__price--old">$169.99</span>
+        </p>
+        <button class="card__button">
+          <img src="./assets/images/icon-cart.svg" alt="Shopping cart icon" class="card__icon" />
+          <span class="card__button-text">Add to Cart</span>
+        </button>
+    </article>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+
+/*Breakpoint 1440px*/
+
+@media (min-width: 90rem) {
+  .card {
+    max-width: 37.5rem;
+    display: flex;
+
+    &__image {
+      max-width: 18.75rem;
+      height: 100%;
+      border-radius: 0.625rem 0 0 0.625rem;
+      object-fit: cover;
+    }
+
+    &__content {
+      padding: 2rem 2rem 0 2rem;
+    }
+
+    &__title {
+      margin: 1.25rem 0 1.5rem 0;
+    }
+
+    &__button {
+      margin-top: 1.875rem;
+      padding: 0.938rem 3.875rem;
+    }
+  }
 }
 ```
 
 ### Continued development
 
-I want to continue learning more about Responsive, BEM methodology and perfect the technique in aspects like name the classes, also I want to improve in modularize the component's styles with Sass and learn about Conventional Commits
+With this path, I want to continue learning more about **Responsive Design** and how to work across different devices, **BEM methodology** and perfect the technique in aspects like name the classes, also I want to improve in modularize the component's styles with **Sass** and learn about **Conventional Commits**.
 
 ### Useful resources
 
