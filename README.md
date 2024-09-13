@@ -33,8 +33,8 @@ This is a solution to the **[Product preview card component challenge on Fronten
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/product-preview-card-component-html-scss-osoukVY2A-)
+- Live Site URL: [Deploy with Vercel](https://fem-product-preview-card-component-psi.vercel.app/)
 
 ## My process
 
